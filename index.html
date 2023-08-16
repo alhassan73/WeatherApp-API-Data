@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-center align-items-center min-vh-100 p-4 header"
+    >
+      <button
+        id="detectLocation"
+        class="rounded-circle d-flex justify-content-center align-items-center"
+      >
+        <i class="fa-solid fa-location-crosshairs text-black fs-1"></i>
+      </button>
+      <div class="background-container"></div>
+      <div class="container">
+        <div
+          class="forecasts-container row rounded-5 p-5 flex-column justify-content-center align-items-center gap-4"
+        >
+        <div class="part-header d-flex justify-content-center align-items-center gap-2 text-white">
+          <i class="fa-solid fa-cloud h1 logo"></i>
+          <h1>Weather360</h1>
+        </div>
+          <div
+            class="nav-container d-flex justify-content-between align-items-center flex-column-reverse gap-4 gap-md-0 flex-md-row mb-5"
+          >
+            <div
+              id="locationName"
+              class="d-flex align-items-center justify-content-center gap-2 h2 location-name"
+            >
+              <i class="fa-solid fa-location-dot fs-3"></i>
+              <span class="fs-2"></span>
+            </div>
+            <div
+              class="d-flex justify-content-between align-items-center fs-5 search-container p-3 rounded-5"
+            >
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                type="text"
+                placeholder="Search a location"
+                class="search-input"
+                id="searchInput"
+              />
+            </div>
+          </div>
+          <div class="weather-container row gy-4">
+            <div class="col-12">
+              <div
+                class="current-forecast p-4 rounded-4 d-flex justify-content-center align-items-center flex-column"
+              >
+                <p class="date fs-2 fw-normal"></p>
+                <div
+                  class="Current-degree d-flex justify-content-evenly align-items-center flex-column flex-lg-row w-100"
+                >
+                  <div
+                    class="weather-degree d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <div
+                      class="temperature d-flex justify-content-center align-items-center column-gap-1"
+                    >
+                      <h3 class="current-degree"></h3>
+                      <img alt="current-image" class="currentImg" />
+                    </div>
+                    <span class="weather-condition fs-4 fw-medium"></span>
+                  </div>
+                  <div
+                    class="other-status-one fs-4 d-flex justify-content-center align-items-baseline flex-row flex-lg-column gap-lg-0 gap-3"
+                  >
+                    <div class="stat d-flex align-items-center gap-1">
+                      <i class="fa-solid fa-cloud-showers-heavy"></i>
+                      <span class="rain"> </span>
+                    </div>
+                    <div class="stat d-flex align-items-center gap-1">
+                      <i class="fa-solid fa-wind"></i>
+                      <span class="wind"></span>
+                    </div>
+                    <div class="stat d-flex align-items-center gap-1">
+                      <i class="fa-regular fa-compass"></i>
+                      <span class="direction"></span>
+                    </div>
+                  </div>
+                  <div
+                    class="other-status-two fs-4 d-flex justify-content-center align-items-baseline flex-row flex-lg-column gap-lg-0 gap-3"
+                  >
+                    <div class="stat d-flex align-items-center gap-1">
+                      <i class="fa-solid fa-cloud"></i>
+                      <span class="cloud"></span>
+                    </div>
+                    <div class="stat d-flex align-items-center gap-1">
+                      <i class="fa-solid fa-gauge"></i>
+                      <span class="pressure"></span>
+                    </div>
+                    <div class="stat d-flex align-items-center gap-1">
+                      <i class="fa-solid fa-droplet"></i>
+                      <span class="humidity"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row gy-4" id="nextDaysContainer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
