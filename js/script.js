@@ -74,7 +74,6 @@ function changeDateStyle(dateOfForecast) {
     hour: "numeric",
   });
   let allDate = day.split(" at ")[0].split(",").join(" - ");
-  console.log(allDate);
   let hour = day.split("at")[1];
   return { allDate, hour };
 }
