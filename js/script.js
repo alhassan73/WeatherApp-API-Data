@@ -6,7 +6,7 @@ changeForecastData("alexandria");
 changeCurrentData("alexandria");
 async function getApiData(cityName) {
   let https = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=8f3ffe1b20644d88ba9185956231408&q=${cityName}&days=4`
+    `https://api.weatherapi.com/v1/forecast.json?key=8f3ffe1b20644d88ba9185956231408&q=${cityName}&days=4`
   );
   let response = await https.json();
   data = response;
