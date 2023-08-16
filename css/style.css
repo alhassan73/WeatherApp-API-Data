@@ -90,6 +90,15 @@ svg {
   box-shadow: 0 0 0 8px #1b1b1d;
   border: none;
 }
+::-webkit-scrollbar{
+  background-color: black;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#8ec5fc;
+  border-radius: 100vh;
+}
+
 @media (max-width: 1200px) {
   img {
     width: 90px;
