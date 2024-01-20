@@ -15,7 +15,7 @@ WeatherApp API Data is a simple web application that allows users to see cities 
 
 ## Demo
 
-Check out the live demo of WeatherApp API Data: [Demo Link](https://alhassan73.github.io/WeatherApp-API-Data/)
+Check out the live demo of WeatherApp API Data: [Demo Link](https://weather-app-api-data.vercel.app/)
 
 ## Features
 
